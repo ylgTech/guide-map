@@ -56,6 +56,6 @@ npm install --registry=https://registry.npm.taobao.org
 
 ## License
 
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
+MIT license.
 
 Copyright (c) 2020-present yunlugutechnicaldepartment
