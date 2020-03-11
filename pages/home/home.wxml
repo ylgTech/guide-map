@@ -1,0 +1,56 @@
+<!--pages/home/home.wxml-->
+<view style="height: {{ windowHeight }}px; overflow: hidden;">
+  <image class="bg-img" src="../../img/logo.png" mode="aspectFit" style="top: {{ statusBarHeight }}px; height: {{ titleBarHeight }}px;"></image>
+  <view style="background: linear-gradient(45deg, #0081ff, #1cbbb4);">
+    <!-- 标题栏 -->
+    <view class='head' style='height: {{ titleBarHeight }}px; padding-top: {{ statusBarHeight }}px'>
+      <view class='head-item'>地图导览</view>
+    </view>
+    <!-- 菜单 -->
+    <scroll-view class='menu' scroll-x="true" scroll-with-animation scroll-left="{{ scrollLeft }}">
+      <view class="menu-item {{ index == selectedMenu ? 'menu-item-select' : '' }}" wx:for="{{ list }}" wx:key="index" bindtap='showPopup' data-index="{{ index }}">{{ item.head }}</view>
+    </scroll-view>
+  </view>
+  <!-- 地图 -->
+  <view style='height:{{ mapHeight }}px'>
+    <map id='myMap' class='map' longitude="{{ longitude }}" latitude="{{ latitude }}" scale="{{ scale }}" markers="{{ listItem }}" enable-rotate='true' enable-3D='true' show-location='true' bindmarkertap='getDestinationId'>
+      <cover-view class="icons">
+        <van-icon name="aim" bind:click="moveToLocation" size="72rpx" />
+        <van-icon name="more-o" bind:click="about" size="72rpx" class="icons-icon" />
+      </cover-view>
+    </map>
+  </view>
+</view>
+
+<!-- 地点列表 -->
+<van-popup show="{{ show }}" round position="bottom" custom-style="max-height: 80%" bind:close="onClose" bind:after-enter="toView">
+  <block wx:if='{{ showDetail == "about" }}'>
+    <view class="about" bindlongtap="copyQQ">
+      <view style="font-size: 1.4em; text-shadow: 4rpx 4rpx 4rpx #beb6b6;">中南大学五大校区地点标注员</view>
+      <view class="about-head">招募！</view>
+      <view class="about-detail-head">岗位职责</view>
+      <view class="about-detail-body">对五大校区内建筑分类，标记经纬度</view>
+      <view class="about-detail-head">岗位薪资</view>
+      <view class="about-detail-body">200元一个校区内所有建筑</view>
+      <view class="about-detail-head">岗位要求</view>
+      <view class="about-detail-body">熟悉任意一个校区建筑即可参与</view>
+      <view class="about-detail-head">工作时间</view>
+      <view class="about-detail-body">不限制，有时间即可参与</view>
+      <view class="about-detail-body">帮帮学弟学妹熟悉校园！</view>
+      <view class="about-detail-body">感兴趣请加官Q：550196504</view>
+      <view class="about-detail-body">审核通过免费培训,先到先得！</view>
+    </view>
+    <view class='list-about-us'>中南云麓谷信息技术中心</view>
+  </block>
+  <block wx:else>
+    <view class='hint'>{{ hintMessage }}</view>
+    <scroll-view style="max-height: {{ windowHeight * 0.4 }}px" scroll-y="true" scroll-with-animation scroll-into-view="{{ toView }}">
+      <view id="{{ item.id }}" wx:for="{{ listItem }}" wx:key="index">
+        <van-cell custom-class="{{ item.id == toView ? 'bgdc' : '' }}" id="{{ item.id }}" title="{{ item.name }}" size="large" title-class="cell-title" clickable="true" data-index="{{ index }}" bindtap='selectDestination'>
+          <van-icon data-index="{{ index }}" catchtap="navigate" slot="right-icon" name="arrow" color="#1c659c" size="26px" />
+        </van-cell>
+      </view>
+      <view class='list-about-us'>中南云麓谷信息技术中心</view>
+    </scroll-view>
+  </block>
+</van-popup>

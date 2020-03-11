@@ -1,0 +1,156 @@
+/* pages/home/home.wxss */
+
+.bg-img {
+  position: fixed;
+  width: 200px;
+  opacity: 0.8;
+  right: 32px;
+}
+
+.head {
+  display: flex;
+  padding-left: 32rpx;
+  align-items: center;
+}
+
+.head-item {
+  color: #fff;
+  font-size: 37rpx;
+}
+
+.menu {
+  /* 如果要实现滑动则要添加下面这两行代码 */
+  overflow: hidden;
+  white-space: nowrap;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+/* 隐藏滚动条 */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.menu-item {
+  height: 28px;
+  margin: 2px 0;
+  /* 如果要实现滑动则要添加下面这行代码 */
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: 30rpx;
+  color: #fff;
+  padding: 0 30rpx 0 30rpx;
+}
+
+.menu-item-select {
+  background-image: url('https://7265-release-rr1dn-1301509296.tcb.qcloud.la/circle.jpg?sign=7223a8ea913b36b8e62e0b81e89ee766&t=1583757187');
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+}
+
+.map-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.hint {
+  z-index: 999;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 28rpx 0 28rpx 0;
+  color: #1c659c;
+  border-bottom: 1px solid #beb6b6;
+}
+
+.bgdc {
+  background-color: rgb(197, 225, 241) !important;
+}
+
+.navigate-text {
+  padding: 10rpx;
+  color: #1c659c;
+}
+
+.navigate-btn {
+  padding: 10rpx;
+  width: 49rpx;
+  height: 42rpx;
+  opacity: 0.9;
+}
+
+.btn {
+  position: absolute;
+  top: 77%;
+  left: 83%;
+}
+
+.icons {
+  position: absolute;
+  top: 50rpx;
+  right: 50rpx;
+  color: #1c659c;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 10rpx;
+  border-radius: 50rpx;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.icons-icon {
+  margin-top: 20rpx;
+}
+
+.list-about-us {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #888;
+  margin: 20rpx 0;
+}
+
+.cell-title {
+  color: #1c659c !important;
+  margin-left: 2rpx !important;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx 40rpx 0 40rpx;
+  color: #1c659c;
+}
+
+.about-head {
+  font-size: 2.4em;
+  font: bold;
+  text-shadow: 4rpx 4rpx 4rpx #beb6b6;
+}
+
+.about-detail-head {
+  font-size: 1.2em;
+  margin: 20rpx 0 10rpx 0;
+}
+
+.about-detail-body {
+  color: black;
+}
