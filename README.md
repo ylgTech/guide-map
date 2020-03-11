@@ -36,16 +36,16 @@ npm install --registry=https://registry.npm.taobao.org
 
 ```bash
 ├── data                       # 页面数据
-│   └── list.js
+│   └── list.js                # 地点信息
 ├── img                        # 图片资源
 ├── pages                      # 页面代码
 │   ├── index                  # 小程序首页页面
 │   ├── home                   # 地图页面
 │   └── test                   # 测试页面
 ├── .gitignore                 # git忽略文件
-├── app.js					   # 全局js
+├── app.js                     # 全局js
 ├── app.json                   # 小程序页面配置
-├── app.wxss				   # 全局样式
+├── app.wxss                   # 全局样式
 ├── package.json               # npm 配置
 ├── project-lock.json          # 项目配置文件
 ├── project.config.json        # 项目配置文件
