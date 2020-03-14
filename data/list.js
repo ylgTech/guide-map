@@ -2,14 +2,13 @@
 //由home.js调用
 
 //标题栏
-var init = [
-  {
-    head:'发热门诊',
-    varName:'menzhen'
+var init = [{
+    head: '发热门诊',
+    varName: 'menzhen'
   },
   {
-    head:'定点医院',
-    varName:'yiyuan'
+    head: '定点医院',
+    varName: 'yiyuan'
   },
   {
     head: '快递点',
@@ -69,11 +68,12 @@ var sushe = [{
   content: [{
       id: 'a1',
       name: '升华1栋',
-      longitude: 112.937340,  // 经度
-      latitude: 28.155760,  // 纬度
+      longitude: 112.937340, // 经度
+      latitude: 28.155760, // 纬度
       iconPath: '../../img/location.png',
       // 控制icon大小
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a2',
@@ -81,7 +81,8 @@ var sushe = [{
       longitude: 112.937270,
       latitude: 28.156450,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a3',
@@ -89,7 +90,8 @@ var sushe = [{
       longitude: 112.936900,
       latitude: 28.156060,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -98,7 +100,8 @@ var sushe = [{
       longitude: 112.936840,
       latitude: 28.156400,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -107,7 +110,8 @@ var sushe = [{
       longitude: 112.936325,
       latitude: 28.156627,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -116,7 +120,8 @@ var sushe = [{
       longitude: 112.935944,
       latitude: 28.156802,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -125,7 +130,8 @@ var sushe = [{
       longitude: 112.935800,
       latitude: 28.157140,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a8',
@@ -133,7 +139,8 @@ var sushe = [{
       longitude: 112.93684,
       latitude: 28.157213,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -142,7 +149,8 @@ var sushe = [{
       longitude: 112.937200,
       latitude: 28.157210,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -151,7 +159,8 @@ var sushe = [{
       longitude: 112.936271,
       latitude: 28.157128,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a11',
@@ -159,7 +168,8 @@ var sushe = [{
       longitude: 112.936120,
       latitude: 28.157540,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a12',
@@ -167,7 +177,8 @@ var sushe = [{
       longitude: 112.935769,
       latitude: 28.15745,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a13',
@@ -175,7 +186,8 @@ var sushe = [{
       longitude: 112.935777,
       latitude: 28.157738,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a14',
@@ -183,7 +195,8 @@ var sushe = [{
       longitude: 112.934950,
       latitude: 28.158230,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a15',
@@ -191,7 +204,8 @@ var sushe = [{
       longitude: 112.934620,
       latitude: 28.158610,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -200,7 +214,8 @@ var sushe = [{
       longitude: 112.934290,
       latitude: 28.158890,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
 
     },
     {
@@ -209,7 +224,8 @@ var sushe = [{
       longitude: 112.936580,
       latitude: 28.157720,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a18',
@@ -217,7 +233,8 @@ var sushe = [{
       longitude: 112.936150,
       latitude: 28.157840,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a19',
@@ -225,7 +242,8 @@ var sushe = [{
       longitude: 112.935646,
       latitude: 28.158013,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a20',
@@ -233,7 +251,8 @@ var sushe = [{
       longitude: 112.936010,
       latitude: 28.158400,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a21',
@@ -241,7 +260,8 @@ var sushe = [{
       longitude: 112.936020,
       latitude: 28.158740,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a22',
@@ -249,7 +269,8 @@ var sushe = [{
       longitude: 112.936060,
       latitude: 28.159090,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a23',
@@ -257,7 +278,8 @@ var sushe = [{
       longitude: 112.935620,
       latitude: 28.159420,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a24',
@@ -265,7 +287,8 @@ var sushe = [{
       longitude: 112.934980,
       latitude: 28.159390,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a25',
@@ -273,7 +296,8 @@ var sushe = [{
       longitude: 112.933870,
       latitude: 28.159270,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a26',
@@ -281,7 +305,8 @@ var sushe = [{
       longitude: 112.933780,
       latitude: 28.159590,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a27',
@@ -289,7 +314,8 @@ var sushe = [{
       longitude: 112.934850,
       latitude: 28.159730,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a28',
@@ -297,7 +323,8 @@ var sushe = [{
       longitude: 112.934680,
       latitude: 28.160070,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a29',
@@ -305,7 +332,8 @@ var sushe = [{
       longitude: 112.934660,
       latitude: 28.160460,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a30',
@@ -313,7 +341,8 @@ var sushe = [{
       longitude: 112.933660,
       latitude: 28.160330,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a31',
@@ -321,7 +350,8 @@ var sushe = [{
       longitude: 112.933610,
       latitude: 28.160670,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a32',
@@ -329,7 +359,8 @@ var sushe = [{
       longitude: 112.933311,
       latitude: 28.161455,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a33',
@@ -337,7 +368,8 @@ var sushe = [{
       longitude: 112.933440,
       latitude: 28.161840,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a34',
@@ -345,7 +377,8 @@ var sushe = [{
       longitude: 112.937935,
       latitude: 28.159792,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a35',
@@ -353,7 +386,8 @@ var sushe = [{
       longitude: 112.937988,
       latitude: 28.159546,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a36',
@@ -361,7 +395,8 @@ var sushe = [{
       longitude: 112.938042,
       latitude: 28.159231,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a37',
@@ -369,7 +404,8 @@ var sushe = [{
       longitude: 112.938606,
       latitude: 28.159687,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a38',
@@ -377,7 +413,8 @@ var sushe = [{
       longitude: 112.938693,
       latitude: 28.159254,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a39',
@@ -385,7 +422,8 @@ var sushe = [{
       longitude: 112.938644,
       latitude: 28.158844,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a40',
@@ -393,7 +431,8 @@ var sushe = [{
       longitude: 112.938187,
       latitude: 28.158335,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'a41',
@@ -401,7 +440,8 @@ var sushe = [{
       longitude: 112.938477,
       latitude: 28.158537,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -413,7 +453,8 @@ var shitang = [{
       longitude: 112.935240,
       latitude: 28.158780,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'b2',
@@ -421,7 +462,8 @@ var shitang = [{
       longitude: 112.937580,
       latitude: 28.158820,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'b3',
@@ -429,7 +471,8 @@ var shitang = [{
       longitude: 112.936830,
       latitude: 28.156910,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'b4',
@@ -437,7 +480,8 @@ var shitang = [{
       longitude: 112.942069,
       latitude: 28.149825,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'b5',
@@ -445,7 +489,8 @@ var shitang = [{
       longitude: 112.929314,
       latitude: 28.173225,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'b6',
@@ -453,7 +498,8 @@ var shitang = [{
       longitude: 112.932360,
       latitude: 28.167990,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     }
   ]
 }]
@@ -465,7 +511,8 @@ var jiaoxuelou = [{
       longitude: 112.941643,
       latitude: 28.150583,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c2',
@@ -473,7 +520,8 @@ var jiaoxuelou = [{
       longitude: 112.942069,
       latitude: 28.149825,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c3',
@@ -481,7 +529,8 @@ var jiaoxuelou = [{
       longitude: 112.941556,
       latitude: 28.149011,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c4',
@@ -489,7 +538,8 @@ var jiaoxuelou = [{
       longitude: 112.941561,
       latitude: 28.148754,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c5',
@@ -497,7 +547,8 @@ var jiaoxuelou = [{
       longitude: 112.938895,
       latitude: 28.149782,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c6',
@@ -505,7 +556,9 @@ var jiaoxuelou = [{
       longitude: 112.930490,
       latitude: 28.170540,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/minzhu.jpg?sign=f942d736de05279e603c33d2869bdc3c&t=1583934978'
     },
     {
       id: 'c7',
@@ -513,7 +566,8 @@ var jiaoxuelou = [{
       longitude: 112.945730,
       latitude: 28.146980,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c8',
@@ -521,7 +575,8 @@ var jiaoxuelou = [{
       longitude: 112.946609,
       latitude: 28.147697,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c9',
@@ -529,7 +584,8 @@ var jiaoxuelou = [{
       longitude: 112.940580,
       latitude: 28.147450,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c10',
@@ -537,7 +593,8 @@ var jiaoxuelou = [{
       longitude: 112.939850,
       latitude: 28.150380,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c11',
@@ -545,7 +602,8 @@ var jiaoxuelou = [{
       longitude: 112.928533,
       latitude: 28.170156,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c12',
@@ -553,7 +611,8 @@ var jiaoxuelou = [{
       longitude: 112.928350,
       latitude: 28.171270,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'c13',
@@ -561,7 +620,8 @@ var jiaoxuelou = [{
       longitude: 112.930800,
       latitude: 28.167640,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -573,7 +633,8 @@ var dayindian = [{
       longitude: 112.936355,
       latitude: 28.156755,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'd2',
@@ -581,7 +642,8 @@ var dayindian = [{
       longitude: 112.935285,
       latitude: 28.159713,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'd3',
@@ -589,7 +651,8 @@ var dayindian = [{
       longitude: 112.936390,
       latitude: 28.156670,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'd4',
@@ -597,31 +660,35 @@ var dayindian = [{
       longitude: 112.935853,
       latitude: 28.157060,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
-		},
-		{
-			id: 'd5',
-			name: '新晨文印',
-			longitude: 112.936615,
-			latitude: 28.159164,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
-		{
-			id: 'd6',
-			name: '南艺图文',
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'd5',
+      name: '新晨文印',
+      longitude: 112.936615,
+      latitude: 28.159164,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'd6',
+      name: '南艺图文',
       longitude: 112.935360,
-      latitude: 28.157539, 
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
+      latitude: 28.157539,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
     {
       id: 'd7',
       name: '矿山复印社',
       longitude: 112.937218,
       latitude: 28.158916,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -633,7 +700,8 @@ var kuaididian = [{
       longitude: 112.936707,
       latitude: 28.158988,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'e2',
@@ -641,31 +709,35 @@ var kuaididian = [{
       longitude: 112.937497,
       latitude: 28.158355,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
-		},
-		{
-			id: 'e3',
-			name: '妈妈驿站（7栋）',
-			longitude: 112.935801,
-			latitude: 28.157052,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
-		{
-			id: 'e4',
-			name: '妈妈驿站（12栋）',
-			longitude: 112.935550,
-			latitude: 28.157140,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'e3',
+      name: '妈妈驿站（7栋）',
+      longitude: 112.935801,
+      latitude: 28.157052,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'e4',
+      name: '妈妈驿站（12栋）',
+      longitude: 112.935550,
+      latitude: 28.157140,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
     {
       id: 'e5',
       name: '邮政 (南校教工16栋)',
       longitude: 112.936485,
       latitude: 28.162159,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'e6',
@@ -673,7 +745,8 @@ var kuaididian = [{
       longitude: 112.938014,
       latitude: 28.159235,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'e7',
@@ -681,62 +754,70 @@ var kuaididian = [{
       longitude: 112.935734,
       latitude: 28.157069,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
-		},
+      width: 27,
+      height: 40,
+    },
     {
       id: 'e8',
       name: '韵达快递（小栈之家)',
       longitude: 112.936855,
       latitude: 28.15888,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
-		{
-			id: 'e9',
-			name: '申通快递',
-			longitude: 112.937580,
-			latitude: 28.158170,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
-		{
-			id: 'e10',
-			name: '顺丰快递（24栋旁）',
-			longitude: 112.936707,
-			latitude: 28.158988,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
+    {
+      id: 'e9',
+      name: '申通快递',
+      longitude: 112.937580,
+      latitude: 28.158170,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'e10',
+      name: '顺丰快递（24栋旁）',
+      longitude: 112.936707,
+      latitude: 28.158988,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
     }, {
       id: 'e14',
       name: ' 顺丰快递(八食堂旁)',
       longitude: 112.937441,
       latitude: 28.156910,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
-    }, 
-		{
-			id: 'e11',
-			name: '天天快递（24栋旁）',
-			longitude: 112.936655,
-			latitude: 28.159187,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
-		{
-			id: 'e12',
-			name: '乐派服务站（12栋）',
-			longitude: 112.935120,
-			latitude: 28.157543,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
-		{
-			id: 'e13',
-			name: '南一舍东头快递点',
-			longitude: 112.938311,
-			latitude: 28.159828,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'e11',
+      name: '天天快递（24栋旁）',
+      longitude: 112.936655,
+      latitude: 28.159187,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'e12',
+      name: '乐派服务站（12栋）',
+      longitude: 112.935120,
+      latitude: 28.157543,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'e13',
+      name: '南一舍东头快递点',
+      longitude: 112.938311,
+      latitude: 28.159828,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -746,17 +827,19 @@ var yewu = [{
       id: 'f1',
       name: '通信业务办理点',
       longitude: 112.935371,
-      latitude: 28.158097, 
+      latitude: 28.158097,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'f2',
       name: '电费充值处',
-      longitude: 112.935449,  
+      longitude: 112.935449,
       latitude: 28.158007,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'f3',
@@ -764,7 +847,8 @@ var yewu = [{
       longitude: 112.93507,
       latitude: 28.157741,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'f4',
@@ -772,7 +856,8 @@ var yewu = [{
       longitude: 112.936200,
       latitude: 28.157390,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -784,35 +869,45 @@ var shiwuzhaoling = [{
       longitude: 112.935982,
       latitude: 28.156736,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,    },
+      width: 27,
+      height: 40,
+    },
     {
       id: 'g2',
       name: '新校区B座119',
       longitude: 112.942069,
       latitude: 28.149825,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,    },
+      width: 27,
+      height: 40,
+    },
     {
       id: 'g3',
       name: '校本部门口雷锋岗岗亭',
       longitude: 112.932297,
       latitude: 28.164070,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,    },
+      width: 27,
+      height: 40,
+    },
     {
       id: 'g4',
       name: '南校区电动车丢失(南校保安室)',
       longitude: 112.935821,
       latitude: 28.158059,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,    },
+      width: 27,
+      height: 40,
+    },
     {
       id: 'g5',
       name: '新校区电动车丢失(A座保安室)',
       longitude: 112.941643,
       latitude: 28.150583,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,    }
+      width: 27,
+      height: 40,
+    }
   ]
 }]
 var tiyuchangguan = [{
@@ -823,7 +918,8 @@ var tiyuchangguan = [{
       longitude: 112.937930,
       latitude: 28.158820,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h2',
@@ -831,7 +927,8 @@ var tiyuchangguan = [{
       longitude: 112.937891,
       latitude: 28.158736,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h3',
@@ -839,7 +936,8 @@ var tiyuchangguan = [{
       longitude: 112.938738,
       latitude: 28.160586,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h4',
@@ -847,7 +945,8 @@ var tiyuchangguan = [{
       longitude: 112.938703,
       latitude: 28.160718,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h5',
@@ -855,7 +954,8 @@ var tiyuchangguan = [{
       longitude: 112.937524,
       latitude: 28.160095,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h6',
@@ -863,7 +963,8 @@ var tiyuchangguan = [{
       longitude: 112.933668,
       latitude: 28.154474,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h7',
@@ -871,7 +972,8 @@ var tiyuchangguan = [{
       longitude: 112.934189,
       latitude: 28.153191,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h8',
@@ -879,7 +981,8 @@ var tiyuchangguan = [{
       longitude: 112.934052,
       latitude: 28.155117,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'h9',
@@ -887,7 +990,8 @@ var tiyuchangguan = [{
       longitude: 112.933662,
       latitude: 28.155895,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     }
   ]
 }]
@@ -899,7 +1003,8 @@ var yiliaodian = [{
       longitude: 112.936240,
       latitude: 28.157880,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'i2',
@@ -907,7 +1012,8 @@ var yiliaodian = [{
       longitude: 112.939200,
       latitude: 28.161520,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'i3',
@@ -915,7 +1021,8 @@ var yiliaodian = [{
       longitude: 112.932070,
       latitude: 28.171920,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     }
   ]
 }]
@@ -927,7 +1034,8 @@ var tushuguan = [{
       longitude: 112.944477,
       latitude: 28.149475,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'j2',
@@ -935,7 +1043,8 @@ var tushuguan = [{
       longitude: 112.937576,
       latitude: 28.162352,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'j3',
@@ -943,7 +1052,8 @@ var tushuguan = [{
       longitude: 112.931490,
       latitude: 28.169090,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -955,7 +1065,8 @@ var zixishi = [{
       longitude: 112.935490,
       latitude: 28.160850,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'k2',
@@ -963,7 +1074,8 @@ var zixishi = [{
       longitude: 112.932331,
       latitude: 28.157910,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'k3',
@@ -971,7 +1083,8 @@ var zixishi = [{
       longitude: 112.941643,
       latitude: 28.150583,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'k4',
@@ -979,16 +1092,18 @@ var zixishi = [{
       longitude: 112.942069,
       latitude: 28.149825,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
-		},
-		{
-			id: 'k5',
-			name: '新校区C座特定教室',
-			longitude: 112.941556,
-			latitude: 28.149011,
-			iconPath: '../../img/location.png',
-			width: 27, height: 40,
-		},
+      width: 27,
+      height: 40,
+    },
+    {
+      id: 'k5',
+      name: '新校区C座特定教室',
+      longitude: 112.941556,
+      latitude: 28.149011,
+      iconPath: '../../img/location.png',
+      width: 27,
+      height: 40,
+    },
   ]
 }]
 var litang = [{
@@ -999,7 +1114,8 @@ var litang = [{
       longitude: 112.937152,
       latitude: 28.163270,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'l2',
@@ -1007,7 +1123,8 @@ var litang = [{
       longitude: 112.944390,
       latitude: 28.149040,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'l3',
@@ -1015,7 +1132,8 @@ var litang = [{
       longitude: 112.928790,
       latitude: 28.170620,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -1027,7 +1145,8 @@ var qita = [{
       longitude: 112.935468,
       latitude: 28.157384,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'm2',
@@ -1035,7 +1154,8 @@ var qita = [{
       longitude: 112.931960,
       latitude: 28.163330,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'm3',
@@ -1043,7 +1163,8 @@ var qita = [{
       longitude: 112.932331,
       latitude: 28.157910,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'm4',
@@ -1051,7 +1172,8 @@ var qita = [{
       longitude: 112.932370,
       latitude: 28.162220,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'm5',
@@ -1059,7 +1181,8 @@ var qita = [{
       longitude: 112.935946,
       latitude: 28.158339,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'm6',
@@ -1067,7 +1190,8 @@ var qita = [{
       longitude: 112.935821,
       latitude: 28.158059,
       iconPath: '../../img/location.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
   ]
 }]
@@ -1082,7 +1206,7 @@ var yiyuan = [{
       iconPath: '../../img/location2.png',
       width: 27,
       height: 40,
-    
+
     },
     {
       id: 'n2',
@@ -1092,7 +1216,7 @@ var yiyuan = [{
       iconPath: '../../img/location2.png',
       width: 27,
       height: 40,
-    
+
     },
     {
       id: 'n3',
@@ -1102,7 +1226,7 @@ var yiyuan = [{
       iconPath: '../../img/location2.png',
       width: 27,
       height: 40,
-    
+
     },
     {
       id: 'n4',
@@ -1112,7 +1236,7 @@ var yiyuan = [{
       iconPath: '../../img/location2.png',
       width: 27,
       height: 40,
-    
+
     },
     {
       id: 'n5',
@@ -1122,20 +1246,20 @@ var yiyuan = [{
       iconPath: '../../img/location2.png',
       width: 27,
       height: 40,
-    
+
     }
   ]
 }]
 var menzhen = [{
   head: '发热门诊',
-  content: [
-    {
+  content: [{
       id: 'o1',
       name: '中南大学湘雅二医院',
       longitude: 112.993823,
       latitude: 28.186460,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o2',
@@ -1143,7 +1267,8 @@ var menzhen = [{
       longitude: 113.029300,
       latitude: 28.204640,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o3',
@@ -1151,7 +1276,8 @@ var menzhen = [{
       longitude: 113.009126,
       latitude: 28.193351,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o4',
@@ -1159,7 +1285,8 @@ var menzhen = [{
       longitude: 113.032330,
       latitude: 28.183135,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o5',
@@ -1167,7 +1294,8 @@ var menzhen = [{
       longitude: 112.981815,
       latitude: 28.190463,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o6',
@@ -1175,7 +1303,8 @@ var menzhen = [{
       longitude: 112.977770,
       latitude: 28.175727,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o7',
@@ -1183,7 +1312,8 @@ var menzhen = [{
       longitude: 112.985330,
       latitude: 28.017100,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o8',
@@ -1191,7 +1321,8 @@ var menzhen = [{
       longitude: 112.945534,
       latitude: 28.220068,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o9',
@@ -1199,7 +1330,8 @@ var menzhen = [{
       longitude: 112.949342,
       latitude: 28.195530,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o10',
@@ -1207,7 +1339,8 @@ var menzhen = [{
       longitude: 112.949825,
       latitude: 28.194280,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o11',
@@ -1215,7 +1348,8 @@ var menzhen = [{
       longitude: 112.902056,
       latitude: 28.206457,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o12',
@@ -1223,7 +1357,8 @@ var menzhen = [{
       longitude: 112.904789,
       latitude: 28.133094,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o13',
@@ -1231,7 +1366,8 @@ var menzhen = [{
       longitude: 112.984940,
       latitude: 28.212003,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o14',
@@ -1239,7 +1375,8 @@ var menzhen = [{
       longitude: 112.983430,
       latitude: 28.208064,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o15',
@@ -1247,7 +1384,8 @@ var menzhen = [{
       longitude: 112.980946,
       latitude: 28.203367,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o16',
@@ -1255,7 +1393,8 @@ var menzhen = [{
       longitude: 112.981720,
       latitude: 28.204430,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o17',
@@ -1263,7 +1402,8 @@ var menzhen = [{
       longitude: 112.985971,
       latitude: 28.155176,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o18',
@@ -1271,7 +1411,8 @@ var menzhen = [{
       longitude: 112.988440,
       latitude: 28.173370,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o19',
@@ -1279,7 +1420,8 @@ var menzhen = [{
       longitude: 112.995669,
       latitude: 28.165096,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o20',
@@ -1287,7 +1429,8 @@ var menzhen = [{
       longitude: 112.998556,
       latitude: 28.142469,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o21',
@@ -1295,7 +1438,8 @@ var menzhen = [{
       longitude: 113.288846,
       latitude: 28.397869,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o22',
@@ -1303,7 +1447,8 @@ var menzhen = [{
       longitude: 113.110657,
       latitude: 28.182668,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o23',
@@ -1311,7 +1456,8 @@ var menzhen = [{
       longitude: 113.089140,
       latitude: 28.245880,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o24',
@@ -1319,7 +1465,8 @@ var menzhen = [{
       longitude: 113.126184,
       latitude: 28.244083,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o25',
@@ -1327,7 +1474,8 @@ var menzhen = [{
       longitude: 113.113890,
       latitude: 28.375020,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o26',
@@ -1335,7 +1483,8 @@ var menzhen = [{
       longitude: 113.086649,
       latitude: 28.235420,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o27',
@@ -1343,7 +1492,8 @@ var menzhen = [{
       longitude: 112.813890,
       latitude: 28.372000,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o28',
@@ -1351,7 +1501,8 @@ var menzhen = [{
       longitude: 112.931990,
       latitude: 28.406270,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o29',
@@ -1359,7 +1510,8 @@ var menzhen = [{
       longitude: 112.755610,
       latitude: 28.200930,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o30',
@@ -1367,7 +1519,8 @@ var menzhen = [{
       longitude: 112.925970,
       latitude: 28.494800,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o31',
@@ -1375,7 +1528,8 @@ var menzhen = [{
       longitude: 112.739640,
       latitude: 28.450770,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o32',
@@ -1383,7 +1537,8 @@ var menzhen = [{
       longitude: 113.630569,
       latitude: 28.139177,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o33',
@@ -1391,7 +1546,8 @@ var menzhen = [{
       longitude: 113.628993,
       latitude: 28.142893,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o34',
@@ -1399,7 +1555,8 @@ var menzhen = [{
       longitude: 113.614472,
       latitude: 28.152790,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o35',
@@ -1407,7 +1564,8 @@ var menzhen = [{
       longitude: 113.627185,
       latitude: 28.149315,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o36',
@@ -1415,7 +1573,8 @@ var menzhen = [{
       longitude: 113.633040,
       latitude: 28.128740,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o37',
@@ -1423,7 +1582,8 @@ var menzhen = [{
       longitude: 113.884350,
       latitude: 28.343140,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o38',
@@ -1431,7 +1591,8 @@ var menzhen = [{
       longitude: 113.753056,
       latitude: 28.278481,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o39',
@@ -1439,7 +1600,8 @@ var menzhen = [{
       longitude: 113.333499,
       latitude: 28.009809,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o40',
@@ -1447,7 +1609,8 @@ var menzhen = [{
       longitude: 113.412380,
       latitude: 28.260140,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o41',
@@ -1455,7 +1618,8 @@ var menzhen = [{
       longitude: 113.287872,
       latitude: 28.211427,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o42',
@@ -1463,7 +1627,8 @@ var menzhen = [{
       longitude: 112.546885,
       latitude: 28.266113,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o43',
@@ -1471,7 +1636,8 @@ var menzhen = [{
       longitude: 112.545090,
       latitude: 28.251370,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o44',
@@ -1479,7 +1645,8 @@ var menzhen = [{
       longitude: 112.540562,
       latitude: 28.254549,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o45',
@@ -1487,7 +1654,8 @@ var menzhen = [{
       longitude: 112.546760,
       latitude: 28.237900,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     },
     {
       id: 'o46',
@@ -1495,7 +1663,8 @@ var menzhen = [{
       longitude: 112.290810,
       latitude: 28.133100,
       iconPath: '../../img/location2.png',
-      width: 27, height: 40,
+      width: 27,
+      height: 40,
     }
   ]
 }]
@@ -1516,6 +1685,6 @@ module.exports = {
   tushuguan: tushuguan,
   litang: litang,
   qita: qita,
-  menzhen:menzhen,
-  yiyuan:yiyuan
+  menzhen: menzhen,
+  yiyuan: yiyuan
 }
