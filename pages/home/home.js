@@ -4,6 +4,7 @@
 var listData_SC = require('../../data/SouthCampus.js');
 var listData_MC = require('../../data/MainCampus.js');
 var listData_RC = require('../../data/RailwayCampus.js');
+var listData_XC = require('../../data/XyCampus.js');
 //不是用于页面渲染的数据放置此处、优化小程序性能
 
 //用于获取屏幕信息 适配屏幕大小
@@ -334,12 +335,23 @@ Page({
     switch (this.data.switch1) {
       case 1:
         listData = listData_SC;
+        longitude: 112.936395
+        latitude: 28.160311
         break;
       case 2:
         listData = listData_MC;
+        //此处为切换到本部中心点默认位置
+        // longitude: 112.936395
+        // latitude: 28.160311
         break;
       case 3:
         listData = listData_RC;
+        //此处为切换到铁道校区中心点的位置
+        // longitude: 112.936395
+        // latitude: 28.160311
+        break;
+      case 4:
+        // listData=listData_XC;
         break;
     }
     this.onLoad()
