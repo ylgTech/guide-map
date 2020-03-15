@@ -5,7 +5,7 @@
     <!-- 标题栏 -->
     <view class='head' style='height: {{ titleBarHeight }}px; padding-top: {{ statusBarHeight }}px'>
       <van-dropdown-menu class="van-dropdown-menu">
-        <van-dropdown-item title-class="dropdown-title"title="{{ text }}"value="{{ value1 }}" options="{{ option1 }}" />
+        <van-dropdown-item bind:change="onSwitch1Change" checked="{{ switch1 }}" title-class="dropdown-title" title="{{ text }}" value="{{ value1 }}" options="{{ option1 }}" />
       </van-dropdown-menu>
     </view>
     <!-- 菜单 -->

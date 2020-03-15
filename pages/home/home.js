@@ -1,8 +1,9 @@
 // pages/home/home.js
 
 //调用list页面所需信息
-var listData = require('../../data/list.js');
-
+var listData_SC = require('../../data/SouthCampus.js');
+var listData_MC = require('../../data/MainCampus.js');
+var listData_RC = require('../../data/RailwayCampus.js');
 //不是用于页面渲染的数据放置此处、优化小程序性能
 
 //用于获取屏幕信息 适配屏幕大小
@@ -11,7 +12,8 @@ var windowHeight = 0;
 var navigateName
 var widths = []
 var view
-
+//当前使用数据
+var listData = listData_SC
 
 Page({
 
@@ -50,18 +52,27 @@ Page({
     //校区切换
     option1: [{
         text: '南校区',
-        value: 1
+        value: 1,
+        id: 1
       },
       {
         text: '校本部',
-        value: 2
+        value: 2,
+        id: 2
       },
       {
         text: '铁道校区',
-        value: 3
+        value: 3,
+        id: 3
+      },
+      {
+        text: '湘雅校区',
+        value: 4,
+        id: 4
       }
     ],
     value1: 1,
+    switch1: 1,
   },
 
   /**
@@ -308,5 +319,30 @@ Page({
     this.setData({
       show: false
     });
+  },
+
+  /**
+   * 点击事件
+   */
+  onSwitch1Change({
+    detail
+  }) {
+    this.setData({
+      switch1: detail
+    });
+    console.log(this.data.switch1);
+    switch (this.data.switch1) {
+      case 1:
+        listData = listData_SC;
+        break;
+      case 2:
+        listData = listData_MC;
+        break;
+      case 3:
+        listData = listData_RC;
+        break;
+    }
+    this.onLoad()
+    this.onReady()
   },
 })
