@@ -1,0 +1,24 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+.custom{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 70px;
+  background: #1c659c;
+  z-index: 999;
+}
+.custom text{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 35rpx;
+  margin-top: 75rpx;
+  font-weight: 500; 
+}

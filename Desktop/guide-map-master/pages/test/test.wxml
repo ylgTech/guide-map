@@ -1,0 +1,37 @@
+<!--pages/new/new.wxml-->
+<view style="height: {{ windowHeight }}px; overflow: hidden;">
+  <image class="logo" src="../../img/logo.png"  mode="aspectFit" style="top: {{ statusBarHeight }}px; height: {{ titleBarHeight }}px;"></image>
+  <view style="background: linear-gradient(45deg, #0081ff, #1cbbb4);">
+    <view style="height: {{ titleBarHeight }}px; padding-top: {{ statusBarHeight }}px" class="navigation">
+      地图导览
+    </view>
+    <scroll-view class="menu" scroll-x="true">
+      <view class="menu-item" wx:for="{{ menu }}" wx:key="menu">{{ item.head }}</view>
+    </scroll-view>
+  </view>
+  <!-- 地图 -->
+  <view style="height: {{ mapHeight }}px; width: 750rpx;">
+    <map class="map" longitude="{{ longitude }}" latitude="{{ latitude }}"></map>
+  </view>
+</view>
+
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose">
+    <view class='hint'>{{ hintMessage }}</view>
+    <scroll-view style="max-height: {{ windowHeight * 0.4 }}px" scroll-y="true" scroll-with-animation scroll-into-view="{{ toView }}">
+      <view id="{{ item.id }}" wx:for="{{ listItem }}" wx:key="index">
+        <van-cell custom-class="{{ item.id == toView ? 'bgdc' : '' }}" id="{{ item.id }}" title="{{ item.name }}" size="large" title-class="cell-title" clickable="true" data-index="{{ index }}" bindtap='selectDestination'>
+          <van-icon data-index="{{ index }}" catchtap="navigate" slot="right-icon" name="arrow" color="#1c659c" size="26px" />
+        </van-cell>
+      </view>
+      <view class='list-about-us'>中南云麓谷信息技术中心</view>
+    </scroll-view>
+  </van-popup>
+
+<!-- 图片url -->
+<!-- https://7265-release-rr1dn-1301509296.tcb.qcloud.la/minzhu.jpg?sign=f942d736de05279e603c33d2869bdc3c&t=1583934978 -->
+<!-- https://7265-release-rr1dn-1301509296.tcb.qcloud.la/dizhi.jpg?sign=fe9de99f5849b1837eab48091cf8d877&t=1583935031 -->

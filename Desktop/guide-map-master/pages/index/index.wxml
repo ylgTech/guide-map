@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<view>
+  <image src='../../img/welcome.png' class='welcome'></image>
+  <!-- <view class="fa">
+    <image src="../../img/symbol.png" class="symbol" style="padding-top:{{windowHeight*0.06}}px;padding-left:{{windowWidth*0.04}}px"></image>
+  </view> -->
+  <!-- 倒计时3s自动跳转 -->
+  <van-tag bindtap="redirect" class="time" size="large" color="#969799" plain round type="primary">{{ time }} s</van-tag>
+</view>

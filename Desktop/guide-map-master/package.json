@@ -1,0 +1,14 @@
+{
+  "name": "guide-map",
+  "version": "1.0.0",
+  "description": "a guide-map in CSU mianly provide service to freshman",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zephyr",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.0.5"
+  }
+}

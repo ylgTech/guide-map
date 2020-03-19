@@ -1,0 +1,41 @@
+/* pages/new/new.wxss */
+.navigation {
+  color: white;
+  margin-left: 32px;
+  font-size: 1.4em;
+}
+
+.logo {
+  position: fixed;
+  width: 200px;
+  opacity: 0.8;
+  right: 32px;
+}
+
+.menu {
+  /* 如果要实现滑动则要添加下面这两行代码 */
+  overflow: hidden;
+  white-space: nowrap;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.menu-item {
+  height: 28px;
+  margin: 2px 0;
+  /* 如果要实现滑动则要添加下面这行代码 */
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  font-size: 30rpx;
+  color: #fff;
+  padding: 0 30rpx 0 30rpx;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
