@@ -1,0 +1,18 @@
+<!--pages/index/weather.wxml-->
+<view id="app" class="app" style="background-image: url('{{ imgUrl }}'); height: {{ windowHeight }}px">
+  <!--<view class="search-box">
+    <input type="text" class="search-bar" placeholder="Search..." />
+  </view>-->
+
+  <view class="weather-wrap" v-if="typeof weather.main != 'undefined'">
+    <view class="location-box">
+      <view class="location">{{ basic.parent_city }}</view>
+      <view class="date">{{ update.loc }}</view>
+    </view>
+
+    <view class="weather-box">
+      <view class="temp">{{ now.tmp }}°c</view>
+      <view class="weather">{{ now.comd_txt }}</view>
+    </view>
+  </view>
+</view>
