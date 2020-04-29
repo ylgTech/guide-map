@@ -65,6 +65,7 @@ var init = [{
 ]
 var sushe = [{
   head: '宿舍',
+  icon: 'fire-o',
   content: [{
       id: 'a1',
       name: '升华1栋',
@@ -447,6 +448,7 @@ var sushe = [{
 }]
 var shitang = [{
   head: '食堂',
+  icon: 'fire-o',
   content: [{
       id: 'b1',
       name: '南校区二食堂',
@@ -505,6 +507,7 @@ var shitang = [{
 }]
 var jiaoxuelou = [{
   head: '教学实验楼',
+  icon: 'fire-o',
   content: [{
       id: 'c1',
       name: '新校区A座',
@@ -627,6 +630,7 @@ var jiaoxuelou = [{
 }]
 var dayindian = [{
   head: '打印店',
+  icon: 'fire-o',
   content: [{
       id: 'd1',
       name: '佳美图文',
@@ -694,6 +698,7 @@ var dayindian = [{
 }]
 var kuaididian = [{
   head: '快递点',
+  icon: 'fire-o',
   content: [{
       id: 'e1',
       name: '菜鸟驿站 (24栋旁)',
@@ -823,6 +828,7 @@ var kuaididian = [{
 }]
 var yewu = [{
   head: '业务办理点',
+  icon: 'fire-o',
   content: [{
       id: 'f1',
       name: '通信业务办理点',
@@ -863,6 +869,7 @@ var yewu = [{
 }]
 var shiwuzhaoling = [{
   head: '失物招领处',
+  icon: 'fire-o',
   content: [{
       id: 'g1',
       name: '南校区升华6栋保安室',
@@ -912,6 +919,7 @@ var shiwuzhaoling = [{
 }]
 var tiyuchangguan = [{
   head: '体育场馆',
+  icon: 'fire-o',
   content: [{
       id: 'h1',
       name: '乒羽馆',
@@ -997,6 +1005,7 @@ var tiyuchangguan = [{
 }]
 var yiliaodian = [{
   head: '医疗点',
+  icon: 'fire-o',
   content: [{
       id: 'i1',
       name: '校医院门诊部',
@@ -1028,6 +1037,7 @@ var yiliaodian = [{
 }]
 var tushuguan = [{
   head: '图书馆',
+  icon: 'fire-o',
   content: [{
       id: 'j1',
       name: '新校区图书馆',
@@ -1059,6 +1069,7 @@ var tushuguan = [{
 }]
 var zixishi = [{
   head: '自习室',
+  icon: 'fire-o',
   content: [{
       id: 'k1',
       name: '第三教学楼(马院)',
@@ -1108,6 +1119,7 @@ var zixishi = [{
 }]
 var litang = [{
   head: '礼堂',
+  icon: 'fire-o',
   content: [{
       id: 'l1',
       name: '南校礼堂',
@@ -1139,6 +1151,7 @@ var litang = [{
 }]
 var qita = [{
   head: '其他',
+  icon: 'fire-o',
   content: [{
       id: 'm1',
       name: '校园书店',
@@ -1198,6 +1211,7 @@ var qita = [{
 
 var yiyuan = [{
   head: '定点医院',
+  icon: 'fire-o',
   content: [{
       id: 'n1',
       name: '长沙市公共卫生救治医院',
@@ -1252,6 +1266,7 @@ var yiyuan = [{
 }]
 var menzhen = [{
   head: '发热门诊',
+  icon: 'fire-o',
   content: [{
       id: 'o1',
       name: '中南大学湘雅二医院',

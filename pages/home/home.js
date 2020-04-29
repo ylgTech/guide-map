@@ -74,6 +74,7 @@ Page({
     ],
     value1: 1,
     switch1: 1,
+    hintIcon: 'fire-o'
   },
 
   /**
@@ -86,6 +87,7 @@ Page({
       list: listData.init,
       listItem: listData[index][0].content,
       hintMessage: '共有' + listData[index][0].content.length + '个' + listData[index][0].head,
+      hintIcon: listData[index][0].icon,
       toView: listData[index][0].content[0].id
     })
   },
@@ -209,8 +211,10 @@ Page({
    * 改动提示信息
    */
   changeHintMessage: function(e) {
+    console.log(e)
     this.setData({
       hintMessage: '共有' + e.content.length + '个' + e.head,
+      
     })
   },
 

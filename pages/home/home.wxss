@@ -158,11 +158,11 @@
 .cell-item{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .cell-title{
-  margin-top: 66rpx;
-  margin-left: 50rpx !important;
+  margin-left: 20rpx !important;
 }
 
 .head-background{
@@ -174,5 +174,5 @@
 }
 
 .van-dropdown-menu{
-  background-color: var(--dropdown-menu-background-color, linear-gradient(45deg, #0081ff, #1cbbb4));
+  background-color: transparent !important;
 }

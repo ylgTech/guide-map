@@ -46,7 +46,7 @@
   </block>
   <block wx:else>
     <view class='hint'>
-      <van-icon name="fire-o" />{{ hintMessage }}</view>
+      <van-icon name="{{ hintIcon }}" />{{ hintMessage }}</view>
     <scroll-view style="max-height: {{ windowHeight * 0.4 }}px" scroll-y="true" scroll-with-animation scroll-into-view="{{ toView }}">
       <view id="{{ item.id }}" wx:for="{{ listItem }}" wx:key="index">
         <van-cell custom-class="{{ item.id == toView ? 'bgdc' : '' }}" id="{{ item.id }}" size="large" clickable="true" data-index="{{ index }}" bindtap='selectDestination'>
