@@ -1,7 +1,7 @@
 // pages/new/new.js
 
 //调用list页面所需信息
-var listData = require('../../data/list.js');
+var listData = require('../../data/SouthCampus.js');
 
 Page({
 

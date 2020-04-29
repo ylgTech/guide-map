@@ -1,8 +1,10 @@
 // pages/home/home.js
 
 //调用list页面所需信息
-var listData = require('../../data/list.js');
-
+var listData_SC = require('../../data/SouthCampus.js');
+var listData_MC = require('../../data/MainCampus.js');
+var listData_RC = require('../../data/RailwayCampus.js');
+var listData_XC = require('../../data/XyCampus.js');
 //不是用于页面渲染的数据放置此处、优化小程序性能
 
 //用于获取屏幕信息 适配屏幕大小
@@ -11,7 +13,8 @@ var windowHeight = 0;
 var navigateName
 var widths = []
 var view
-
+//当前使用数据
+var listData = listData_SC
 
 Page({
 
@@ -47,18 +50,44 @@ Page({
     hintMessage: '',
     //用于打开关于我们界面
     isAboutShown: false,
+    //校区切换
+    option1: [{
+        text: '南校区',
+        value: 1,
+        id: 1
+      },
+      {
+        text: '校本部',
+        value: 2,
+        id: 2
+      },
+      {
+        text: '铁道校区',
+        value: 3,
+        id: 3
+      },
+      {
+        text: '湘雅校区',
+        value: 4,
+        id: 4
+      }
+    ],
+    value1: 1,
+    switch1: 1,
+    hintIcon: 'fire-o'
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
     console.log('onLoad--------------------->');
     let index = listData.init[0].varName
     this.setData({
       list: listData.init,
       listItem: listData[index][0].content,
       hintMessage: '共有' + listData[index][0].content.length + '个' + listData[index][0].head,
+      hintIcon: listData[index][0].icon,
       toView: listData[index][0].content[0].id
     })
   },
@@ -66,14 +95,14 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function (e) {
+  onReady: function(e) {
     console.log('onReady--------------------->');
     this.mapCtx = wx.createMapContext('myMap')
     this.includePoints()
     // 获取menu-item宽度信息
     const query = wx.createSelectorQuery()
     query.selectAll('.menu-item').boundingClientRect()
-    query.exec(function (res) {
+    query.exec(function(res) {
       widths = new Array(res[0].length)
       for (let i = 0; i < widths.length; i++) {
         widths[i] = res[0][i].left
@@ -84,7 +113,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function (e) {
+  onShow: function(e) {
     console.log('onShow--------------------->');
     this.getWindowHeight();
   },
@@ -92,17 +121,17 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /** 
    * 获取用户设备屏幕高度
    */
-  getWindowHeight: function () {
+  getWindowHeight: function() {
     var that = this
     wx.getSystemInfo({
-      success: function (res) {
+      success: function(res) {
         var statusBarHeight = res.statusBarHeight;
         var titleBarHeight;
         // 确定titleBar高度（区分安卓和苹果
@@ -123,7 +152,7 @@ Page({
     })
   },
 
-  scopeSetting: function () {
+  scopeSetting: function() {
     var that = this;
     wx.getSetting({
       success(res) {
@@ -138,10 +167,10 @@ Page({
               wx.showModal({
                 title: '提示',
                 content: '定位失败，你未开启定位权限，点击开启定位权限',
-                success: function (res) {
+                success: function(res) {
                   if (res.confirm) {
                     wx.openSetting({
-                      success: function (res) {
+                      success: function(res) {
                         if (res.authSetting['scope.userLocation']) {
                           that.moveToLocation();
                         } else {
@@ -164,11 +193,11 @@ Page({
   /**
    * 请求用户所在地理位置、并移动到地图中心
    */
-  moveToLocation: function () {
+  moveToLocation: function() {
     var that = this
     wx.getLocation({
       type: 'gcj02',
-      success: function (res) {
+      success: function(res) {
         that.setData({
           latitude: res.latitude,
           longitude: res.longitude,
@@ -181,16 +210,18 @@ Page({
   /**
    * 改动提示信息
    */
-  changeHintMessage: function (e) {
+  changeHintMessage: function(e) {
+    console.log(e)
     this.setData({
       hintMessage: '共有' + e.content.length + '个' + e.head,
+      
     })
   },
 
   /**
    * 缩放比例使得标点能全部显现
    */
-  includePoints: function () {
+  includePoints: function() {
     this.mapCtx.includePoints({
       padding: [60],
       points: this.data.listItem
@@ -200,7 +231,7 @@ Page({
   /**
    * 选取目的地、获取经纬度
    */
-  selectDestination: function (e) {
+  selectDestination: function(e) {
     let i = e.currentTarget.dataset.index
     this.setData({
       show: false,
@@ -214,7 +245,7 @@ Page({
   /**
    * 得到scroll—view的id 实现scrll-into-view的功能
    */
-  getDestinationId: function (e) {
+  getDestinationId: function(e) {
     this.setData({
       show: true,
     })
@@ -224,7 +255,7 @@ Page({
   /**
    * 调取导航界面、并获取相关数据
    */
-  navigate: function (e) {
+  navigate: function(e) {
     //调用 selectDestination()解决参数没有更新的问题
     this.selectDestination(e)
     console.log(e)
@@ -238,10 +269,10 @@ Page({
     })
   },
 
-	/**
-	 * 复制官Q到剪贴板
-	 */
-  copyQQ: function () {
+  /**
+   * 复制官Q到剪贴板
+   */
+  copyQQ: function() {
     wx.setClipboardData({
       data: '2420538090',
     })
@@ -250,7 +281,7 @@ Page({
   /**
    * 弹出地点列表，并赋值
    */
-  showPopup: function (e) {
+  showPopup: function(e) {
     let index = e.currentTarget.dataset.index
     let name = this.data.list[index].varName
     var listItem = listData[name][0]
@@ -270,7 +301,7 @@ Page({
   /**
    * 列表弹出完成时触发，使scroll-view滚动到选中地点
    */
-  toView: function () {
+  toView: function() {
     this.setData({
       toView: view,
     })
@@ -279,7 +310,7 @@ Page({
   /**
    * 展示关于我们界面
    */
-  about: function () {
+  about: function() {
     this.setData({
       show: true,
       showDetail: 'about',
@@ -290,6 +321,44 @@ Page({
    * 隐藏列表
    */
   onClose() {
-    this.setData({ show: false });
+    this.setData({
+      show: false
+    });
+  },
+
+  /**
+   * 点击事件
+   */
+  onSwitch1Change({
+    detail
+  }) {
+    this.setData({
+      switch1: detail
+    });
+    console.log(this.data.switch1);
+    switch (this.data.switch1) {
+      case 1:
+        listData = listData_SC;
+        longitude: 112.936395
+        latitude: 28.160311
+        break;
+      case 2:
+        listData = listData_MC;
+        //此处为切换到本部中心点默认位置
+        // longitude: 112.936395
+        // latitude: 28.160311
+        break;
+      case 3:
+        listData = listData_RC;
+        //此处为切换到铁道校区中心点的位置
+        // longitude: 112.936395
+        // latitude: 28.160311
+        break;
+      case 4:
+        // listData=listData_XC;
+        break;
+    }
+    this.onLoad()
+    this.onReady()
   },
 })

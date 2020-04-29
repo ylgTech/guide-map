@@ -13,11 +13,6 @@
   align-items: center;
 }
 
-.head-item {
-  color: #fff;
-  font-size: 37rpx;
-}
-
 .menu {
   /* 如果要实现滑动则要添加下面这两行代码 */
   overflow: hidden;
@@ -153,4 +148,31 @@
 
 .about-detail-body {
   color: black;
+}
+
+.scroll-view-image{
+  height: 25px;
+  width: 25px;
+}
+
+.cell-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cell-title{
+  margin-left: 20rpx !important;
+}
+
+.head-background{
+  background: linear-gradient(45deg, #0081ff, #1cbbb4) !important;
+}
+
+.dropdown-title{
+  color: white !important;
+}
+
+.van-dropdown-menu{
+  background-color: transparent !important;
 }
