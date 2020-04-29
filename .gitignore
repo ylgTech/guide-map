@@ -1,3 +1,6 @@
 # ignore node_modules files
 miniprogram_npm/
 node_modules/
+*.zip
+*.doc
+*.docx
