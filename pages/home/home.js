@@ -89,7 +89,7 @@ Page({
       listItem: listData[index][0].content,
       hintMessage: '共有' + listData[index][0].content.length + '个' + listData[index][0].head,
       hintIcon: listData[index][0].icon,
-      toView: listData[index][0].content[0].id
+      toView: listData[index][0].content[0].id,
     })
   },
 
@@ -294,7 +294,8 @@ Page({
       show: true,
       showDetail: '',
       scrollLeft: widths[index - 1],
-      toView: view
+      toView: view,
+      hintIcon: listItem.icon
     })
     this.includePoints()
   },

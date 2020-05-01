@@ -448,7 +448,7 @@ var sushe = [{
 }]
 var shitang = [{
   head: '食堂',
-  icon: 'fire-o',
+  icon: 'paid',
   content: [{
       id: 'b1',
       name: '南校区二食堂',
