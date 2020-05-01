@@ -74,7 +74,8 @@ Page({
     ],
     value1: 1,
     switch1: 1,
-    hintIcon: 'fire-o'
+    hintIcon: 'fire-o',
+    imgShow: false,
   },
 
   /**
@@ -361,4 +362,19 @@ Page({
     this.onLoad()
     this.onReady()
   },
+
+  showModel: function (e) {
+    let i = e.currentTarget.dataset.index
+    this.setData({
+      imgShow: true,
+      imgUrl: this.data.listItem[i].imagePath,
+      imgText: this.data.listItem[i].name
+    })
+  },
+
+  hideModal: function () {
+    this.setData({
+      imgShow: false
+    })
+  }
 })

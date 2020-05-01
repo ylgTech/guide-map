@@ -1,6 +1,6 @@
 /* pages/home/home.wxss */
 
-.bg-img {
+.top-bg-img {
   position: fixed;
   width: 200px;
   opacity: 0.8;

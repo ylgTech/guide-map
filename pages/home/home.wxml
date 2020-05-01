@@ -1,9 +1,9 @@
 <!--pages/home/home.wxml-->
 <view style="height: {{ windowHeight }}px; overflow: hidden;">
-  <image class="bg-img" src="../../img/logo.png" mode="aspectFit" style="top: {{ statusBarHeight }}px; height: {{ titleBarHeight }}px;"></image>
+  <image class="top-bg-img" src="../../img/logo.png" mode="aspectFit" style="top: {{ statusBarHeight }}px; height: {{ titleBarHeight }}px;"></image>
   <view class="head-background">
     <!-- 标题栏 -->
-    <view class='head' style='height: {{ titleBarHeight }}px; padding-top: {{ statusBarHeight }}px'>
+    <view class='head' style='height: {{ titleBarHeight + statusBarHeight }}px; padding-top: {{ statusBarHeight }}px'>
       <van-dropdown-menu class="van-dropdown-menu">
         <van-dropdown-item bind:change="onSwitch1Change" checked="{{ switch1 }}" title-class="dropdown-title" title="{{ text }}" value="{{ value1 }}" options="{{ option1 }}" />
       </van-dropdown-menu>
@@ -51,7 +51,7 @@
       <view id="{{ item.id }}" wx:for="{{ listItem }}" wx:key="index">
         <van-cell custom-class="{{ item.id == toView ? 'bgdc' : '' }}" id="{{ item.id }}" size="large" clickable="true" data-index="{{ index }}" bindtap='selectDestination'>
           <view class='cell-item'>
-            <van-icon name="{{item.imagePath}}" size="75px" />
+            <van-icon catchtap="showModel" data-index="{{ index }}" name="{{item.imagePath}}" size="75px" />
             <view class="cell-title">{{item.name}}</view>
           </view>
           <van-icon data-index="{{ index }}" catchtap="navigate" slot="right-icon" name="arrow" color="#1c659c" size="26px" />
@@ -68,3 +68,18 @@
     </scroll-view>
   </block>
 </van-popup>
+
+<view class="cu-modal {{imgShow?'show':''}}">
+  <view class="cu-dialog">
+    <view class="bg-img" style="background-image: url({{imgUrl}});height:200px;">
+      <view class="cu-bar justify-end text-white">
+        <view class="action" bindtap="hideModal">
+          <text class="cuIcon-close "></text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">{{ imgText }}</view>
+    </view>
+  </view>
+</view>
