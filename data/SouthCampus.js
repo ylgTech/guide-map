@@ -457,6 +457,7 @@ var shitang = [{
       iconPath: '../../img/location.png',
       width: 27,
       height: 40,
+    imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/canteen/canteen2.jpg?sign=fa74ecd8ef52940d030a3f2e9d2dd215&t=1588330354',
     },
     {
       id: 'b2',
@@ -466,6 +467,7 @@ var shitang = [{
       iconPath: '../../img/location.png',
       width: 27,
       height: 40,
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/canteen/canteen7.jpg?sign=cd2fb6e135330818c0e628a795704f68&t=1588330319',
     },
     {
       id: 'b3',
@@ -475,6 +477,7 @@ var shitang = [{
       iconPath: '../../img/location.png',
       width: 27,
       height: 40,
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/canteen/canteen8.jpg?sign=a3a8f8d183f36da7912b179a0cdb4deb&t=1588330031',
     },
     {
       id: 'b4',
@@ -1046,6 +1049,7 @@ var tushuguan = [{
       iconPath: '../../img/location.png',
       width: 27,
       height: 40,
+    imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/library/libNew.jpg?sign=8674e11211c31e352a61c0c7c5b0fc6c&t=1588330899',
     },
     {
       id: 'j2',
@@ -1064,6 +1068,7 @@ var tushuguan = [{
       iconPath: '../../img/location.png',
       width: 27,
       height: 40,
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/library/libMain.jpg?sign=b8a65aeb734fb64ad15f6c1d067bb590&t=1588330834',
     },
   ]
 }]
@@ -1137,6 +1142,7 @@ var litang = [{
       iconPath: '../../img/location.png',
       width: 27,
       height: 40,
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/library/hall.jpg?sign=746aa903c87d23cda7819b18e8042b5e&t=1588330798',
     },
     {
       id: 'l3',
