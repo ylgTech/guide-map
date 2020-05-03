@@ -48,22 +48,22 @@
     <view class='hint'>
       <van-icon name="{{ hintIcon }}" />{{ hintMessage }}</view>
     <scroll-view style="max-height: {{ windowHeight * 0.4 }}px" scroll-y="true" scroll-with-animation scroll-into-view="{{ toView }}">
-      <view id="{{ item.id }}" wx:for="{{ listItem }}" wx:key="index">
-        <van-cell custom-class="{{ item.id == toView ? 'bgdc' : '' }}" id="{{ item.id }}" size="large" clickable="true" data-index="{{ index }}" bindtap='selectDestination'>
+      <!-- <view id="{{ item.id }}" wx:for="{{ listItem }}" wx:key="index"> -->
+        <!-- <van-cell custom-class="{{ item.id == toView ? 'bgdc' : '' }}" id="{{ item.id }}" size="large" clickable="true" data-index="{{ index }}" bindtap='selectDestination'>
           <view class='cell-item'>
             <van-icon catchtap="showModel" data-index="{{ index }}" name="{{item.imagePath}}" size="75px" />
             <view class="cell-title">{{item.name}}</view>
           </view>
           <van-icon data-index="{{ index }}" catchtap="navigate" slot="right-icon" name="arrow" color="#1c659c" size="26px" />
-        </van-cell>
-        <!-- <view class="scroll-view-cell" wx:for="{{listItem}}" bindtap="selectDestination" id="{{item.id}}" wx:key="index">
-          <image src='{{item.imagePath}}' mode='widthFix' style="width:60rpx"></image>
-          <view>
-            <text>{{item.name}}</text>
-            <image src='../../imag/right.png' mode='widthFix' style="width:40rpx;"></image>
+        </van-cell> -->
+        <view class="scroll-view-cell {{ item.id == toView ? 'bgdc' : '' }}" wx:for="{{listItem}}" bindtap="selectDestination" id="{{ item.id }}" wx:key="{{ item.id }}">
+          <van-image data-index="{{ index }}" class="cell-img" lazy-load wx:if='{{item.imagePath != undefine}}' catchtap="showModel" src='{{item.imagePath}}' fit='contain' width='100' height='75'/>
+          <view class="cell-text">
+            <view class="cell-name">{{item.name}}</view>
           </view>
-        </view> -->
-      </view>
+            <van-icon class="cell-icon" name="arrow" color="#1c659c" size="25px"/>
+        </view>
+      <!-- </view> -->
       <view class='list-about-us'>中南云麓谷信息技术中心</view>
     </scroll-view>
   </block>

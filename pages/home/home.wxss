@@ -155,10 +155,34 @@
   width: 25px;
 }
 
+.scroll-view-cell {
+  display: flex;
+  align-items: center;
+}
+
 .cell-item{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.cell-img {
+  margin: 30rpx 0 30rpx 30rpx;
+  border-radius: 4px;
+}
+
+.cell-icon {
+  position: absolute;
+  right: 20px;
+}
+
+.cell-text {
+  display: flex;
+}
+
+.cell-name {
+  margin: 40rpx 40rpx;
+  color: #1c659c;
 }
 
 .cell-title{

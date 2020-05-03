@@ -8,6 +8,7 @@ Page({
     windowHeight:0,
     windowWidth:0,
     time: 3,  // 倒计时3s
+    imgsrc: ''
 	},
 
 	/**
@@ -47,6 +48,16 @@ Page({
         console.log(res);
         var windowHeight = res.windowHeight
         var windowWidth = res.windowWidth
+        if(windowHeight/windowWidth>1.8){
+          that.setData({
+            imgsrc: '../../img/welcome2.jpg'
+          })
+        }
+        else{
+          that.setData({
+            imgsrc: '../../img/welcome.png'
+          })
+        }
         that.setData({
           windowHeight: windowHeight,
           windowWidth: windowWidth

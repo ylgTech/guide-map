@@ -83,13 +83,19 @@ Page({
    */
   onLoad: function(options) {
     console.log('onLoad--------------------->');
-    let index = listData.init[0].varName
+    this.initData()
+  },
+
+  initData: function () {
+    let key = listData.init[0].varName
     this.setData({
       list: listData.init,
-      listItem: listData[index][0].content,
-      hintMessage: '共有' + listData[index][0].content.length + '个' + listData[index][0].head,
-      hintIcon: listData[index][0].icon,
-      toView: listData[index][0].content[0].id,
+      listItem: listData[key][0].content,
+      hintMessage: '共有' + listData[key][0].content.length + '个' + listData[key][0].head,
+      hintIcon: listData[key][0].icon,
+      toView: listData[key][0].content[0].id,
+      selectedMenu: 0,
+      scrollLeft: 0
     })
   },
 
@@ -334,9 +340,7 @@ Page({
   /**
    * 点击事件
    */
-  onSwitch1Change({
-    detail
-  }) {
+  onSwitch1Change({ detail }) {
     this.setData({
       switch1: detail
     });
@@ -350,21 +354,20 @@ Page({
       case 2:
         listData = listData_MC;
         //此处为切换到本部中心点默认位置
-        // longitude: 112.936395
-        // latitude: 28.160311
+        longitude: 112.936395
+        latitude: 28.160311
         break;
       case 3:
         listData = listData_RC;
         //此处为切换到铁道校区中心点的位置
-        // longitude: 112.936395
-        // latitude: 28.160311
+        longitude: 112.936395
+        latitude: 28.160311
         break;
       case 4:
-        // listData=listData_XC;
+        listData=listData_XC;
         break;
     }
-    this.onLoad()
-    this.onReady()
+    this.initData()
   },
 
   showModel: function (e) {

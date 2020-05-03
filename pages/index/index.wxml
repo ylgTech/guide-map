@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <view>
-  <image src='../../img/welcome.png' class='welcome'></image>
+  <image src='{{imgsrc}}' class='welcome'></image>
   <!-- <view class="fa">
     <image src="../../img/symbol.png" class="symbol" style="padding-top:{{windowHeight*0.06}}px;padding-left:{{windowWidth*0.04}}px"></image>
   </view> -->
