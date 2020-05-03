@@ -56,12 +56,10 @@
           </view>
           <van-icon data-index="{{ index }}" catchtap="navigate" slot="right-icon" name="arrow" color="#1c659c" size="26px" />
         </van-cell> -->
-        <view class="scroll-view-cell {{ item.id == toView ? 'bgdc' : '' }}" wx:for="{{listItem}}" bindtap="selectDestination" id="{{ item.id }}" wx:key="{{ item.id }}">
+        <view class="scroll-view-cell {{ item.id == toView ? 'bgdc' : '' }}" wx:for="{{listItem}}" bindtap="selectDestination" id="{{ item.id }}" data-index="{{ index }}" wx:key="{{ item.name }}">
           <van-image data-index="{{ index }}" class="cell-img" lazy-load wx:if='{{item.imagePath != undefine}}' catchtap="showModel" src='{{item.imagePath}}' fit='contain' width='100' height='75'/>
-          <view class="cell-text">
-            <view class="cell-name">{{item.name}}</view>
-          </view>
-            <van-icon class="cell-icon" name="arrow" color="#1c659c" size="25px"/>
+          <view class="cell-name">{{item.name}}</view>
+          <van-icon data-index="{{ index }}" catchtap="navigate" class="cell-icon" name="arrow" color="#1c659c" size="25px"/>
         </view>
       <!-- </view> -->
       <view class='list-about-us'>中南云麓谷信息技术中心</view>

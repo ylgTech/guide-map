@@ -56,11 +56,11 @@ Page({
         value: 1,
         id: 1
       },
-      {
-        text: '校本部',
-        value: 2,
-        id: 2
-      },
+      // {
+      //   text: '校本部',
+      //   value: 2,
+      //   id: 2
+      // },
       {
         text: '铁道校区',
         value: 3,
@@ -95,8 +95,10 @@ Page({
       hintIcon: listData[key][0].icon,
       toView: listData[key][0].content[0].id,
       selectedMenu: 0,
-      scrollLeft: 0
+      scrollLeft: 0,
+      show: true
     })
+    this.includePoints()
   },
 
   /**
@@ -300,12 +302,15 @@ Page({
       listItem: listItem.content,
       selectedMenu: index,
       show: true,
-      showDetail: '',
+      showDetail: 'about',
       scrollLeft: widths[index - 1],
       toView: view,
       hintIcon: listItem.icon
     })
     console.log(this.data.listItem)
+    this.setData({
+      showDetail: ''
+    })
     this.includePoints()
   },
 
