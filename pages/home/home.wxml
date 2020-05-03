@@ -16,10 +16,10 @@
   <!-- 地图 -->
   <view style='height:{{ mapHeight }}px'>
     <map id='myMap' class='map' longitude="{{ longitude }}" latitude="{{ latitude }}" scale="{{ scale }}" markers="{{ listItem }}" enable-rotate='true' enable-3D='true' show-location='true' bindmarkertap='getDestinationId'>
-      <cover-view class="icons">
+      <view class="icons">
         <van-icon name="aim" bind:click="moveToLocation" size="72rpx" />
         <van-icon name="more-o" bind:click="about" size="72rpx" class="icons-icon" />
-      </cover-view>
+      </view>
     </map>
   </view>
 </view>

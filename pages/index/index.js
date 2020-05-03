@@ -61,7 +61,7 @@ Page({
 	redirect: function () {
     clearInterval(this.data.Time)
 		wx.reLaunch({
-			url: '../test/test',
+			url: '../home/home',
 		})
 	}
 })
