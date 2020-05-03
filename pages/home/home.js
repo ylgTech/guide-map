@@ -74,7 +74,7 @@ Page({
     ],
     value1: 1,
     switch1: 1,
-    hintIcon: 'fire-o',
+    hintIcon: 'star-o',
     imgShow: false,
   },
 
@@ -285,6 +285,8 @@ Page({
   showPopup: function(e) {
     let index = e.currentTarget.dataset.index
     let name = this.data.list[index].varName
+    console.log(name)
+    console.log(listData)
     var listItem = listData[name][0]
     view = listData[name][0].content[0].id
     this.changeHintMessage(listItem)
@@ -297,6 +299,7 @@ Page({
       toView: view,
       hintIcon: listItem.icon
     })
+    console.log(this.data.listItem)
     this.includePoints()
   },
 
