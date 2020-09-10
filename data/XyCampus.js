@@ -2,14 +2,11 @@
 //由home.js调用
 
 //标题栏
-var init = [{
-  head: '发热门诊',
-  varName: 'menzhen'
-},
-{
-  head: '定点医院',
-  varName: 'yiyuan'
-},
+var init = [
+//   {
+//   head: '发热门诊',
+//   varName: 'menzhen'
+// },
 // {
 //   head: '快递点',
 //   varName: 'kuaididian'
@@ -42,14 +39,18 @@ var init = [{
   head: '体育场馆',
   varName: 'tiyuchangguan'
 },
-// {
-//   head: '医疗点',
-//   varName: 'yiliaodian'
-// },
 {
   head: '图书馆',
   varName: 'tushuguan'
 },
+{
+  head: '定点医院',
+  varName: 'yiyuan'
+},
+// {
+//   head: '医疗点',
+//   varName: 'yiliaodian'
+// },
 // {
 //   head: '自习室',
 //   varName: 'zixishi'

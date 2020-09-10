@@ -2,18 +2,11 @@
 //由home.js调用
 
 //标题栏
-var init = [{
-    head: '发热门诊',
-    varName: 'menzhen'
-  },
-  {
-    head: '定点医院',
-    varName: 'yiyuan'
-  },
-  {
-    head: '快递点',
-    varName: 'kuaididian'
-  },
+var init = [
+  // {
+  //   head: '发热门诊',
+  //   varName: 'menzhen'
+  // },
   {
     head: '宿舍',
     varName: 'sushe'
@@ -27,32 +20,40 @@ var init = [{
     varName: 'jiaoxuelou'
   },
   {
-    head: '打印店',
-    varName: 'dayindian'
-  },
-  {
     head: '业务办理点',
     varName: 'yewu'
-  },
-  {
-    head: '失物招领处',
-    varName: 'shiwuzhaoling'
   },
   {
     head: '体育场馆',
     varName: 'tiyuchangguan'
   },
   {
-    head: '医疗点',
-    varName: 'yiliaodian'
-  },
-  {
     head: '图书馆',
     varName: 'tushuguan'
   },
   {
+    head: '快递点',
+    varName: 'kuaididian'
+  },
+  {
+    head: '打印店',
+    varName: 'dayindian'
+  },
+  {
+    head: '失物招领处',
+    varName: 'shiwuzhaoling'
+  },
+  {
+    head: '医疗点',
+    varName: 'yiliaodian'
+  },
+  {
     head: '自习室',
     varName: 'zixishi'
+  },
+  {
+    head: '定点医院',
+    varName: 'yiyuan'
   },
   {
     head: '礼堂',
@@ -457,7 +458,7 @@ var shitang = [{
       iconPath: '../../img/shitang.png',
       width: 27,
       height: 40,
-    imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/canteen/canteen2.jpg?sign=fa74ecd8ef52940d030a3f2e9d2dd215&t=1588330354',
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/canteen/canteen2.jpg?sign=fa74ecd8ef52940d030a3f2e9d2dd215&t=1588330354',
     },
     {
       id: 'b2',
@@ -661,24 +662,15 @@ var dayindian = [{
     },
     {
       id: 'd3',
-      name: '云印社2',
-      longitude: 112.936390,
-      latitude: 28.156670,
+      name: '107图文',
+      longitude: 112.929631,
+      latitude: 28.172913,
       iconPath: '../../img/dayindian.png',
       width: 27,
       height: 40,
     },
     {
       id: 'd4',
-      name: '万佳图文',
-      longitude: 112.935853,
-      latitude: 28.157060,
-      iconPath: '../../img/dayindian.png',
-      width: 27,
-      height: 40,
-    },
-    {
-      id: 'd5',
       name: '新晨文印',
       longitude: 112.936615,
       latitude: 28.159164,
@@ -687,19 +679,10 @@ var dayindian = [{
       height: 40,
     },
     {
-      id: 'd6',
+      id: 'd5',
       name: '南艺图文',
       longitude: 112.935360,
       latitude: 28.157539,
-      iconPath: '../../img/dayindian.png',
-      width: 27,
-      height: 40,
-    },
-    {
-      id: 'd7',
-      name: '矿山复印社',
-      longitude: 112.937218,
-      latitude: 28.158916,
       iconPath: '../../img/dayindian.png',
       width: 27,
       height: 40,
@@ -719,25 +702,16 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e2',
-      name: '菜鸟驿站 (极速网吧)',
-      longitude: 112.937497,
-      latitude: 28.158355,
-      iconPath: '../../img/kuaididian.png',
-      width: 27,
-      height: 40,
-    },
-    {
-      id: 'e3',
-      name: '妈妈驿站（7栋）',
+      id: 'e11',
+      name: '菜鸟驿站 (7栋旁)',
       longitude: 112.935801,
-      latitude: 28.157052,
+      latitude: 28.157143,
       iconPath: '../../img/kuaididian.png',
       width: 27,
       height: 40,
     },
     {
-      id: 'e4',
+      id: 'e2',
       name: '妈妈驿站（12栋）',
       longitude: 112.935550,
       latitude: 28.157140,
@@ -746,7 +720,7 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e5',
+      id: 'e3',
       name: '邮政 (南校教工16栋)',
       longitude: 112.936485,
       latitude: 28.162159,
@@ -755,7 +729,7 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e6',
+      id: 'e4',
       name: '韵达快递 (南3舍109室)',
       longitude: 112.938014,
       latitude: 28.159235,
@@ -764,7 +738,7 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e7',
+      id: 'e5',
       name: '韵达快递 (升华7栋)',
       longitude: 112.935734,
       latitude: 28.157069,
@@ -773,7 +747,7 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e8',
+      id: 'e6',
       name: '韵达快递（小栈之家)',
       longitude: 112.936855,
       latitude: 28.15888,
@@ -781,34 +755,26 @@ var kuaididian = [{
       width: 27,
       height: 40,
     },
+    // {
+    //   id: 'e9',
+    //   name: '申通快递',
+    //   longitude: 112.937580,
+    //   latitude: 28.158170,
+    //   iconPath: '../../img/kuaididian.png',
+    //   width: 27,
+    //   height: 40,
+    // },
     {
-      id: 'e9',
-      name: '申通快递',
-      longitude: 112.937580,
-      latitude: 28.158170,
-      iconPath: '../../img/kuaididian.png',
-      width: 27,
-      height: 40,
-    },
-    {
-      id: 'e10',
+      id: 'e7',
       name: '顺丰快递（24栋旁）',
       longitude: 112.936707,
       latitude: 28.158988,
       iconPath: '../../img/kuaididian.png',
       width: 27,
       height: 40,
-    }, {
-      id: 'e14',
-      name: ' 顺丰快递(八食堂旁)',
-      longitude: 112.937441,
-      latitude: 28.156910,
-      iconPath: '../../img/kuaididian.png',
-      width: 27,
-      height: 40,
     },
     {
-      id: 'e11',
+      id: 'e8',
       name: '天天快递（24栋旁）',
       longitude: 112.936655,
       latitude: 28.159187,
@@ -817,7 +783,7 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e12',
+      id: 'e9',
       name: '乐派服务站（12栋）',
       longitude: 112.935120,
       latitude: 28.157543,
@@ -826,7 +792,7 @@ var kuaididian = [{
       height: 40,
     },
     {
-      id: 'e13',
+      id: 'e10',
       name: '南一舍东头快递点',
       longitude: 112.938311,
       latitude: 28.159828,
@@ -1060,7 +1026,7 @@ var tushuguan = [{
       iconPath: '../../img/tushuguan.png',
       width: 27,
       height: 40,
-    imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/library/libNew.jpg?sign=8674e11211c31e352a61c0c7c5b0fc6c&t=1588330899',
+      imagePath: 'https://7265-release-rr1dn-1301509296.tcb.qcloud.la/library/libNew.jpg?sign=8674e11211c31e352a61c0c7c5b0fc6c&t=1588330899',
     },
     {
       id: 'j2',
@@ -1087,6 +1053,14 @@ var zixishi = [{
   head: '自习室',
   icon: 'edit',
   content: [{
+      id: 'k6',
+      name: '知新馆（升华12栋2楼）',
+      longitude: 112.935769,
+      latitude: 28.15745,
+      iconPath: '../../img/zixishi.png',
+      width: 27,
+      height: 40,
+    }, {
       id: 'k1',
       name: '第三教学楼(马院)',
       longitude: 112.935490,
@@ -1172,8 +1146,8 @@ var qita = [{
   content: [{
       id: 'm1',
       name: '校园书店',
-      longitude: 112.935468,
-      latitude: 28.157384,
+      longitude: 112.935469,
+      latitude: 28.157385,
       iconPath: '../../img/qita.png',
       width: 27,
       height: 40,

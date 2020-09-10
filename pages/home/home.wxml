@@ -28,19 +28,17 @@
 <van-popup show="{{ show }}" round position="bottom" custom-style="max-height: 80%" bind:close="onClose" bind:after-enter="toView">
   <block wx:if='{{ showDetail == "about" }}'>
     <view class="about" bindlongtap="copyQQ">
-      <view style="font-size: 1.4em; text-shadow: 4rpx 4rpx 4rpx #beb6b6;">中南大学五大校区地点标注员</view>
-      <view class="about-head">招募！</view>
-      <view class="about-detail-head">岗位职责</view>
-      <view class="about-detail-body">对五大校区内建筑分类，标记经纬度</view>
-      <view class="about-detail-head">岗位薪资</view>
-      <view class="about-detail-body">200元一个校区内所有建筑</view>
-      <view class="about-detail-head">岗位要求</view>
-      <view class="about-detail-body">熟悉任意一个校区建筑即可参与</view>
-      <view class="about-detail-head">工作时间</view>
-      <view class="about-detail-body">不限制，有时间即可参与</view>
-      <view class="about-detail-body">帮帮学弟学妹熟悉校园！</view>
+      <view style="font-size: 1.4em; text-shadow: 4rpx 4rpx 4rpx #beb6b6;">中南云麓谷信息技术中心</view>
+      <view class="about-head">招新！</view>
+      <view class="about-detail-body">渴望拥有自己的项目以获得实习机会？</view>
+      <view class="about-detail-body">想要让自己的代码在全校范围内使用？</view>
+      <view class="about-detail-body">自学了很厉害的技术无处施展无人欣赏？</view>
+      <view style="font-size: 1.4em; text-shadow: 4rpx 4rpx 4rpx #beb6b6;">加入我们！</view>
+      <view style="font-size: 1.4em; text-shadow: 4rpx 4rpx 4rpx #beb6b6;">证明你的能力！</view>
+      <view style="font-size: 1.4em; text-shadow: 4rpx 4rpx 4rpx #beb6b6;">我们给你展示的舞台！</view>
+      <view class="about-detail-body">我们每月有勤工助学工资考核，</view>
+      <view class="about-detail-body">锻炼代码技能的同时，还能给每餐加鸡腿！</view>
       <view class="about-detail-body">感兴趣请加官Q：550196504</view>
-      <view class="about-detail-body">审核通过免费培训,先到先得！</view>
     </view>
     <view class='list-about-us'>中南云麓谷信息技术中心</view>
   </block>
