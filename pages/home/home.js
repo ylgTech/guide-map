@@ -76,16 +76,33 @@ Page({
     switch1: 1,
     hintIcon: 'star-o',
     imgShow: false,
+    show: true,
+    showDetail: 'about',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     console.log('onLoad--------------------->');
     this.initData()
   },
+  //右上角分享功能
+  onShareAppMessage: function (res) {
+    var that = this;
+    return {
+      title: '',
+      path: '/pages/home/home?id=' + that.data.scratchId,
+      success: function (res) {
+        // 转发成功
 
+        that.shareClick();
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
   initData: function () {
     let key = listData.init[0].varName
     this.setData({
@@ -104,14 +121,14 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function(e) {
+  onReady: function (e) {
     console.log('onReady--------------------->');
     this.mapCtx = wx.createMapContext('myMap')
     this.includePoints()
     // 获取menu-item宽度信息
     const query = wx.createSelectorQuery()
     query.selectAll('.menu-item').boundingClientRect()
-    query.exec(function(res) {
+    query.exec(function (res) {
       widths = new Array(res[0].length)
       for (let i = 0; i < widths.length; i++) {
         widths[i] = res[0][i].left
@@ -122,7 +139,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function(e) {
+  onShow: function (e) {
     console.log('onShow--------------------->');
     this.getWindowHeight();
   },
@@ -130,17 +147,17 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /** 
    * 获取用户设备屏幕高度
    */
-  getWindowHeight: function() {
+  getWindowHeight: function () {
     var that = this
     wx.getSystemInfo({
-      success: function(res) {
+      success: function (res) {
         var statusBarHeight = res.statusBarHeight;
         var titleBarHeight;
         // 确定titleBar高度（区分安卓和苹果
@@ -161,7 +178,7 @@ Page({
     })
   },
 
-  scopeSetting: function() {
+  scopeSetting: function () {
     var that = this;
     wx.getSetting({
       success(res) {
@@ -176,10 +193,10 @@ Page({
               wx.showModal({
                 title: '提示',
                 content: '定位失败，你未开启定位权限，点击开启定位权限',
-                success: function(res) {
+                success: function (res) {
                   if (res.confirm) {
                     wx.openSetting({
-                      success: function(res) {
+                      success: function (res) {
                         if (res.authSetting['scope.userLocation']) {
                           that.moveToLocation();
                         } else {
@@ -202,11 +219,11 @@ Page({
   /**
    * 请求用户所在地理位置、并移动到地图中心
    */
-  moveToLocation: function() {
+  moveToLocation: function () {
     var that = this
     wx.getLocation({
       type: 'gcj02',
-      success: function(res) {
+      success: function (res) {
         that.setData({
           latitude: res.latitude,
           longitude: res.longitude,
@@ -219,18 +236,18 @@ Page({
   /**
    * 改动提示信息
    */
-  changeHintMessage: function(e) {
+  changeHintMessage: function (e) {
     console.log(e)
     this.setData({
       hintMessage: '共有' + e.content.length + '个' + e.head,
-      
+
     })
   },
 
   /**
    * 缩放比例使得标点能全部显现
    */
-  includePoints: function() {
+  includePoints: function () {
     this.mapCtx.includePoints({
       padding: [60],
       points: this.data.listItem
@@ -240,7 +257,7 @@ Page({
   /**
    * 选取目的地、获取经纬度
    */
-  selectDestination: function(e) {
+  selectDestination: function (e) {
     let i = e.currentTarget.dataset.index
     this.setData({
       show: false,
@@ -254,7 +271,7 @@ Page({
   /**
    * 得到scroll—view的id 实现scrll-into-view的功能
    */
-  getDestinationId: function(e) {
+  getDestinationId: function (e) {
     this.setData({
       show: true,
     })
@@ -264,7 +281,7 @@ Page({
   /**
    * 调取导航界面、并获取相关数据
    */
-  navigate: function(e) {
+  navigate: function (e) {
     //调用 selectDestination()解决参数没有更新的问题
     this.selectDestination(e)
     console.log(e)
@@ -281,7 +298,7 @@ Page({
   /**
    * 复制官Q到剪贴板
    */
-  copyQQ: function() {
+  copyQQ: function () {
     wx.setClipboardData({
       data: '2420538090',
     })
@@ -290,7 +307,7 @@ Page({
   /**
    * 弹出地点列表，并赋值
    */
-  showPopup: function(e) {
+  showPopup: function (e) {
     let index = e.currentTarget.dataset.index
     let name = this.data.list[index].varName
     console.log(name)
@@ -317,7 +334,7 @@ Page({
   /**
    * 列表弹出完成时触发，使scroll-view滚动到选中地点
    */
-  toView: function() {
+  toView: function () {
     this.setData({
       toView: view,
     })
@@ -326,7 +343,7 @@ Page({
   /**
    * 展示关于我们界面
    */
-  about: function() {
+  about: function () {
     this.setData({
       show: true,
       showDetail: 'about',
@@ -345,7 +362,9 @@ Page({
   /**
    * 点击事件
    */
-  onSwitch1Change({ detail }) {
+  onSwitch1Change({
+    detail
+  }) {
     this.setData({
       switch1: detail
     });
@@ -369,7 +388,7 @@ Page({
         latitude: 28.160311
         break;
       case 4:
-        listData=listData_XC;
+        listData = listData_XC;
         break;
     }
     this.initData()

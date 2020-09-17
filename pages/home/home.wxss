@@ -200,3 +200,9 @@
 .van-dropdown-menu{
   background-color: transparent !important;
 }
+
+.zhaoxin{
+  height: 900rpx;
+  margin-top: -10rpx;
+  margin-bottom: -10rpx;
+}

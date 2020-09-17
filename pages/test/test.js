@@ -34,7 +34,22 @@ Page({
       listItem: listData.menzhen[0].content
     })
   },
+  //右上角分享功能
+  onShareAppMessage: function (res) {
+    var that = this;
+    return {
+      title: '',
+      path: '/pages/home/home?id=' + that.data.scratchId,
+      success: function (res) {
+        // 转发成功
 
+        that.shareClick();
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
